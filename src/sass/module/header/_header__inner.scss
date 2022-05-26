@@ -1,0 +1,35 @@
+@use "global" as *;
+.header__inner {
+  // size
+  width: 100%;
+  height: 100%;
+  // decoration
+  background-color: rgba(17, 17, 17, 0.5);
+  // ajustment
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; // to `.header__nav.open`
+  // space
+  padding-top: rem(0);
+  padding-right: rem(0);
+  padding-bottom: rem(0);
+  padding-left: rem(22);
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
+
+.header__inner.color-on {
+  background-color: rgba(17, 17, 17, 1);
+}
+
+// .header__inner.open {
+//   // decoration
+//   opacity: 1;
+//   @include mq(md) {
+//   }
+//   @include mq(xl) {
+//   }
+// }

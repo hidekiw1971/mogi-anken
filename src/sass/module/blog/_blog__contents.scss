@@ -1,0 +1,12 @@
+@use "global" as *;
+.blog__contents {
+  // ajustment
+  position: relative;
+  z-index: 10;
+
+  @include mq(md) {
+    // display: none;
+  }
+  @include mq(xl) {
+  }
+}

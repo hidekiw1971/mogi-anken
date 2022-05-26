@@ -1,0 +1,12 @@
+@use "global" as *;
+.article {
+  // ajustment
+  text-align: center;
+  position: relative;
+  // z-index: 10;
+
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}

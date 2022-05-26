@@ -1,0 +1,20 @@
+@use "global" as *;
+.article__btn--mdfy {
+  // size
+  max-width: rem(335);
+  width: 100%;
+  height: rem(50);
+  // font
+  font-weight: $normal;
+
+  // ajustment
+  margin-top: rem(-2);
+
+  @include mq(md) {
+    // size
+    width: rem(134);
+    height: rem(30);
+  }
+  @include mq(xl) {
+  }
+}

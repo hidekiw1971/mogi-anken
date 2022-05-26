@@ -1,0 +1,15 @@
+@use "global" as *;
+.header__nav--inner {
+  // size
+  width: 100%;
+  height: 100%;
+  // space
+  padding-top: rem(203);
+
+  @include mq(md) {
+    // space
+    padding-top: rem(0);
+  }
+  @include mq(xl) {
+  }
+}

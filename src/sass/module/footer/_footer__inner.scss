@@ -1,0 +1,57 @@
+@use "global" as *;
+.footer__inner {
+  // size
+  display: inline-block;
+  min-width: rem(375);
+  width: 100%;
+  // decoration
+  background-color: #111;
+  // space
+  padding-top: rem(86);
+  padding-bottom: rem(57);
+  // ajustment
+  position: relative;
+
+  @include mq(md) {
+    // size
+    display: block;
+    max-width: rem(1280);
+    width: 100%;
+    // ajustment
+    margin: 0 auto;
+    // space
+    padding-top: rem(38.4);
+    padding-right: rem(32);
+    padding-bottom: rem(35.6);
+    padding-left: rem(32);
+  }
+  @include mq(xl) {
+  }
+}
+
+// info調整用
+.footer__inner.info-footer__inner {
+  // space
+  padding-top: rem(51);
+
+  @include mq(md) {
+    // space
+    padding-top: rem(30);
+  }
+  @include mq(xl) {
+  }
+}
+
+// blog調整用
+// .footer__inner.info-footer__inner {
+.footer__inner.blog-footer__inner {
+  // space
+  padding-top: rem(53);
+
+  @include mq(md) {
+    // space
+    padding-top: rem(38);
+  }
+  @include mq(xl) {
+  }
+}

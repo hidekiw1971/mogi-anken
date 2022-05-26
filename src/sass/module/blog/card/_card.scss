@@ -1,0 +1,18 @@
+@use "global" as *;
+.card {
+  // size
+  display: block;
+  // max-width: rem(335);
+  width: rem(335);
+  // ajustment
+  margin: 0 auto;
+
+  @include mq(md) {
+    // size
+    width: rem(350);
+    // space
+    margin: rem(0);
+  }
+  @include mq(xl) {
+  }
+}

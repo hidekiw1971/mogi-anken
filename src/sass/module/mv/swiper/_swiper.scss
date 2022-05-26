@@ -1,0 +1,65 @@
+@use "global" as *;
+
+.swiper {
+  width: rem(375);
+  height: rem(770);
+  @include mq(md) {
+    max-width: rem(1280);
+    width: 100%;
+    height: rem(851);
+  }
+  @include mq(xl) {
+  }
+}
+
+@keyframes zoomUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+.swiper-slide-active .slide-img,
+.swiper-slide-duplicate-active .slide-img,
+.swiper-slide-prev .slide-img {
+  animation: zoomUp 10s linear 0s 1 normal both;
+}
+
+//imgタグだと下に隙間ができるのでblockに。
+.slide-img img {
+  display: block;
+  height: rem(770);
+  object-fit: cover;
+  // ajustment
+  position: relative;
+
+  @include mq(md) {
+    height: rem(851);
+  }
+  @include mq(xl) {
+  }
+}
+
+// mask
+.slide-img::before {
+  content: "test";
+  // size
+  min-width: rem(375);
+  width: 100%;
+  height: 100vh;
+  // decoration
+  background-color: #111;
+  opacity: 0.2;
+  // ajustment
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}

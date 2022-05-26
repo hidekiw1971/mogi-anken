@@ -1,0 +1,33 @@
+@use "global" as *;
+.article__inner {
+  // size
+  display: inline-block;
+  min-width: rem(375);
+  width: 100%;
+  // decoration
+  background-color: #111;
+  // space
+  padding-bottom: rem(76);
+
+  @include mq(md) {
+    // size
+    max-width: rem(1280);
+    width: 100%;
+    // space
+    padding-bottom: rem(0);
+  }
+  @include mq(xl) {
+  }
+}
+
+// info.html
+.article__inner.info-article__inner {
+  // space
+  padding-bottom: rem(64);
+
+  @include mq(md) {
+    padding-bottom: rem(81.6);
+  }
+  @include mq(xl) {
+  }
+}

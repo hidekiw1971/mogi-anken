@@ -1,0 +1,121 @@
+@use "global" as *;
+.contact__title--inner {
+  // size
+  width: 100%;
+  height: 100%;
+  // font
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: rem(20);
+  font-weight: $normal;
+  letter-spacing: rem(2);
+  line-height: 1.45;
+  // decoration
+  color: #fff;
+  // space
+  padding-bottom: rem(20);
+  // ajustment
+  position: relative;
+
+  @include mq(md) {
+    // font
+    font-size: rem(30);
+    letter-spacing: rem(2);
+    line-height: 1.1666;
+    // space
+    // padding-bottom: rem(24);
+    padding-bottom: rem(17.6);
+  }
+  @include mq(xl) {
+  }
+}
+
+.contact__title--inner::before {
+  content: "Contact";
+  // size
+  display: block;
+  // font
+  font-family: "Noto Serif JP", serif;
+  font-size: rem(50);
+  font-weight: $normal;
+  letter-spacing: rem(2);
+  line-height: 1.44;
+  // decoration
+  color: #f9f871;
+  opacity: 0.27;
+  // ajustment
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -65%);
+  @include mq(md) {
+    // font
+    font-size: rem(110);
+    letter-spacing: rem(2);
+    line-height: 1.4363;
+    // ajustment
+    top: 0;
+    left: 0;
+    transform: translate(21%, -57.5%);
+  }
+  @include mq(xl) {
+  }
+}
+
+// info調整用
+.contact__title--inner.info-contact__title--inner {
+  // ajustment
+  top: rem(4);
+  // font
+  font-size: rem(25);
+
+  @include mq(md) {
+    // font
+    font-size: rem(30);
+    // space
+    padding-bottom: rem(28);
+  }
+  @include mq(xl) {
+  }
+}
+
+.contact__title--inner.info-contact__title--inner::before {
+  // ajustmetn
+  top: rem(7);
+
+  @include mq(md) {
+    // ajustmetn
+    top: rem(0);
+  }
+  @include mq(xl) {
+  }
+}
+
+// blog調整用
+.contact__title--inner.blog-contact__title--inner {
+  // ajustment
+  top: rem(4);
+  // font
+  font-size: rem(25);
+
+  @include mq(md) {
+    // ajustment
+    top: rem(0);
+    // font
+    font-size: rem(30);
+    // space
+    padding-bottom: rem(16);
+  }
+  @include mq(md) {
+  }
+}
+
+.contact__title--inner.blog-contact__title--inner::before {
+  // ajustment
+  top: rem(7);
+  @include mq(md) {
+    // ajustment
+    top: rem(0);
+  }
+  @include mq(xl) {
+  }
+}

@@ -1,0 +1,21 @@
+@use "global" as *;
+.mv__title {
+  // size
+  display: inline-block;
+  min-width: rem(375);
+  width: 100%;
+  height: rem(770);
+  // ajustment
+  text-align: center;
+  position: absolute;
+  top: 349px;
+  left: 0px;
+  z-index: 10;
+
+  @include mq(md) {
+    // ajustment
+    top: 376px;
+  }
+  @include mq(xl) {
+  }
+}

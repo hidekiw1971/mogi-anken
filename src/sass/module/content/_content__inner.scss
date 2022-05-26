@@ -1,0 +1,13 @@
+@use "global" as *;
+.content__inner {
+  // decoration
+  background-color: #111;
+  // space
+  padding-bottom: rem(50);
+  @include mq(md) {
+    // space
+    padding-bottom: rem(142);
+  }
+  @include mq(xl) {
+  }
+}

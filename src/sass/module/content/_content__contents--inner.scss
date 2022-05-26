@@ -1,0 +1,11 @@
+@use "global" as *;
+.content__contents--inner {
+  // size
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
