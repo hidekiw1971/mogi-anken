@@ -55,6 +55,7 @@
     position: absolute;
     bottom: rem(10);
     left: 0;
+    transition: 0.7s;
   }
   @include mq(xl) {
   }
@@ -90,7 +91,7 @@
     height: 100%;
     // decoration
     background-color: #333;
-    transition: 0.1s;
+    transition: 0.7s;
     // ajustment -> `.header__li--link`
     position: absolute;
     top: 0;
@@ -106,7 +107,7 @@
     // ajustment
     left: 0;
     // decoration
-    transition: 0.1s;
+    transition: 0.7s;
   }
   @include mq(xl) {
   }
