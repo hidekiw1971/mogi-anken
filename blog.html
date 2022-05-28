@@ -40,7 +40,7 @@
 <body>
   <div class="outside">
 
-    <!-- section header -->
+    <!-- header section -->
     <section class="header">
       <div class="header__inner">
         <div class="header__title">
@@ -55,12 +55,33 @@
         <div class="header__nav">
           <nav class="header__nav--inner">
             <ul class="header__ul">
-              <li class="header__li"><a class="header__li--link-a" href="info.html">お知らせ</a></li>
-              <li class="header__li"><a class="header__li--link-a" href="">事業内容</a></li>
-              <li class="header__li"><a class="header__li--link-a" href="">制作実績</a></li>
-              <li class="header__li"><a class="header__li--link-a" href="">企業概要</a></li>
-              <li class="header__li"><a class="header__li--link-a" href="blog.html">ブログ</a></li>
-              <li class="header__li header__li--link"><span>お問い合わせ</span></li>
+              <li class="header__li"><a class="header__li--link-a header__li--link-a-off" href="">
+                  <div class="header__li--wrap">トップ</div>
+                </a></li>
+              <li class="header__li"><a class="header__li--link-a" href="info.html">
+                  <div class="header__li--wrap">お知らせ</div>
+                </a></li>
+              <li class="header__li"><a class="header__li--link-a" href="">
+                  <div class="header__li--wrap">事業内容</div>
+                </a></li>
+              <li class="header__li"><a class="header__li--link-a" href="">
+                  <div class="header__li--wrap">制作実績</div>
+                </a></li>
+              <li class="header__li"><a class="header__li--link-a" href="">
+                  <div class="header__li--wrap">企業概要</div>
+                </a></li>
+              <li class="header__li"><a class="header__li--link-a" href="blog.html">
+                  <div class="header__li--wrap">ブログ</div>
+                </a></li>
+              <!-- <li class="header__li header__li--link"><span>お問い合わせ</span></li> -->
+              <li class="header__li header__li--link"><a class="header__li--link-a header__li--link-a-inner"
+                  href="#"><span>
+                    <div class="header__li--wrap">
+                      <div class="">
+                        <p class="header__li--wrap-text">お問い合わせ</p>
+                      </div>
+                    </div>
+                  </span></a></li>
             </ul>
           </nav>
         </div>
@@ -72,7 +93,7 @@
         </div>
       </div>
     </section>
-    <!-- /section header -->
+    <!-- /header section -->
 
     <!-- section blog-mv -->
     <section class="blog-mv">

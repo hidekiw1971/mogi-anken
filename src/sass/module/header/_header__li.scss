@@ -164,6 +164,7 @@
 
 // fb後の調整
 .header__li--wrap {
+  position: relative;
 }
 
 .header__li--link-a.header__li--link-a-inner {
@@ -183,8 +184,29 @@
   height: 100%;
 }
 
-.header__li--wrap-text {
+.header__li--wrap-text::before {
   @include mq(md) {
+    content: "";
+    // size
+    display: block;
+    width: 100%;
+    height: 2px;
+    // decoration
+    background-color: #ffea2e;
+    opacity: 0;
+    // ajustment -> `.header__li`
+    position: absolute;
+    bottom: rem(2);
+    transition: 0.7s;
+  }
+  @include mq(xl) {
+  }
+}
+
+.header__li--wrap-text:hover::before {
+  @include mq(md) {
+    opacity: 1;
+    transition: 0.7s;
   }
   @include mq(xl) {
   }
