@@ -2126,6 +2126,16 @@ select::-ms-expand {
     margin-right: 0rem;
   }
 }
+.header__li--link-a {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @media screen and (min-width: 768px) {
   .header__li--link-a:hover::before {
     opacity: 1;
@@ -2188,10 +2198,12 @@ select::-ms-expand {
     position: relative;
     z-index: 10;
     color: #fff;
-    -webkit-transition: 0.1s;
-    transition: 0.1s;
   }
 }
+.header__li--link span:hover::before {
+  color: #f00;
+}
+
 .header__li.open {
   display: inline-block;
   width: 100%;

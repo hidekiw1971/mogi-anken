@@ -32,6 +32,12 @@
   }
 }
 
+.header__li--link-a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .header__li--link-a:hover::before {
   @include mq(md) {
     // decoration
@@ -120,10 +126,14 @@
     z-index: 10;
     // decoration
     color: #fff;
-    transition: 0.1s;
+    // transition: 0.7s;
   }
   @include mq(xl) {
   }
+}
+
+.header__li--link span:hover::before {
+  color: #f00;
 }
 
 .header__li.open {
@@ -147,4 +157,8 @@
   }
   @include mq(xl) {
   }
+}
+
+// fb後の調整
+.header__li--wrap {
 }
