@@ -1769,9 +1769,13 @@ select::-ms-expand {
   top: 0;
   left: 0;
   background-color: rgba(255, 255, 255, 0);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 .content__content:hover::after {
   background-color: rgba(255, 255, 255, .6);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 .content__contents--inner {
   display: -webkit-box;
