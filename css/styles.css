@@ -203,63 +203,99 @@ select::-ms-expand {
   background-color: #111;
 }
 
-.arrow__right::after {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  /* 矢印の角度の指定 */
-  position: absolute;
-  /* 矢印の位置の指定 */
-  left: 13px;
-  left: 0.8125rem;
-  /* 矢印の位置の指定 */
-  top: 18px;
-  top: 1.125rem;
-  /* 矢印の位置の指定 */
+.arrow__inner--wrap {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
 }
-.arrow {
+.arrow__inner {
   display: inline-block;
   width: 45px;
   width: 2.8125rem;
   height: 45px;
   height: 2.8125rem;
-  position: relative;
+  margin-right: 10px;
+  margin-right: 0.625rem;
   background-color: #fff;
-  color: #333;
-  position: absolute;
-  bottom: 40px;
-  bottom: 2.5rem;
-  right: 21px;
-  right: 1.3125rem;
+  float: right;
+  overflow: hidden;
+  position: relative;
 }
-@media screen and (min-width: 768px) {
-  .arrow {
-    bottom: 2.0125rem;
-    right: 2rem;
-  }
-}
-.arrow::after {
+.arrow__inner::before {
   content: "";
   display: inline-block;
-  width: 20px;
-  width: 1.25rem;
-  /* 矢印の大きさの指定 */
-  height: 20px;
-  height: 1.25rem;
-  /* 矢印の大きさの指定 */
-  border-top: 2px solid #333;
-  /* 矢印の太さの指定 */
-  border-left: 2px solid #333;
-  /* 矢印の太さの指定 */
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
-@media screen and (min-width: 768px) {
-  .arrow.arrow__right.info-arrow.arrow__right.blog__arrow {
-    bottom: 2.3rem;
-  }
+
+.arrow__inner:hover::before {
+  left: 0;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
-@media screen and (min-width: 768px) {
-  .arrow.arrow__right.info-arrow {
-    bottom: 37px;
-  }
+
+.arrow__line {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.arrow__line::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  width: 1.5625rem;
+  height: 2px;
+  height: 0.125rem;
+  background-color: #333;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  top: 18px;
+  top: 1.125rem;
+  left: 18px;
+  left: 1.125rem;
+}
+
+.arrow__line::after {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  width: 1.5625rem;
+  height: 2px;
+  height: 0.125rem;
+  background-color: #333;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  position: absolute;
+  top: 18px;
+  top: 1.125rem;
+  left: 2px;
+  left: 0.125rem;
+}
+
+.arrow__line:hover::before,
+.arrow__line:hover::after {
+  background-color: #fff;
+  z-index: 99;
+}
+
+.arrow {
+  display: inline-block;
+  width: 100%;
+  height: 45px;
+  height: 2.8125rem;
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
 }
 .article__btn--mdfy {
   max-width: 335px;

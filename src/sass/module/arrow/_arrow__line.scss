@@ -1,0 +1,38 @@
+@use "global" as *;
+.arrow__line {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.arrow__line::before {
+  content: "";
+  display: inline-block;
+  width: rem(25);
+  height: rem(2);
+  background-color: #333;
+  transform: rotate(45deg);
+  position: absolute;
+  top: rem(18);
+  left: rem(18);
+}
+
+.arrow__line::after {
+  content: "";
+  display: inline-block;
+  width: rem(25);
+  height: rem(2);
+  background-color: #333;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: rem(18);
+  left: rem(2);
+}
+
+.arrow__line:hover::before,
+.arrow__line:hover::after {
+  background-color: #fff;
+  z-index: 99;
+}
