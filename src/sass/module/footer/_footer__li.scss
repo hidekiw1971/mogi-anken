@@ -55,6 +55,9 @@
     position: absolute;
     bottom: rem(-4);
     left: 0;
+    opacity: 0;
+    transition: 0.7s;
+    border: 1px solid #ffea2e;
   }
   @include mq(xl) {
   }
@@ -63,7 +66,8 @@
 .footer__li a:hover::after {
   @include mq(md) {
     // decoration
-    border: 1px solid #ffea2e;
+    opacity: 1;
+    transition: 0.7s;
   }
   @include mq(xl) {
   }

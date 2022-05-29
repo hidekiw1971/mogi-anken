@@ -14,7 +14,7 @@
   left: 0;
   // decoration
   transform: scale(1);
-  transition: 0.1s;
+  transition: 0.7s;
 
   @include mq(md) {
   }
@@ -26,7 +26,7 @@
 .card__img--inner.card__img1:hover {
   // decoration
   transform: scale(1.1);
-  transition: 0.1s;
+  transition: 0.7s;
 }
 
 .card__img--inner.card__img2 {
