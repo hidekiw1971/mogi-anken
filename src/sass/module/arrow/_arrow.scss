@@ -1,12 +1,23 @@
 @use "global" as *;
-.arrow {
+.arrow__off.arrow {
   display: inline-block;
   width: 100%;
   height: rem(45);
   // ajustment
   position: fixed;
-  bottom: 0;
+  right: rem(21);
+  bottom: rem(41);
   z-index: 99;
+  @include mq(md) {
+    right: rem(31);
+    bottom: rem(32);
+  }
+  @include mq(xl) {
+  }
+}
+
+.arrow__off {
+  display: none;
   @include mq(md) {
   }
   @include mq(xl) {

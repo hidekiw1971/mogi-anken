@@ -288,14 +288,26 @@ select::-ms-expand {
   z-index: 99;
 }
 
-.arrow {
+.arrow__off.arrow {
   display: inline-block;
   width: 100%;
   height: 45px;
   height: 2.8125rem;
   position: fixed;
-  bottom: 0;
+  right: 21px;
+  right: 1.3125rem;
+  bottom: 41px;
+  bottom: 2.5625rem;
   z-index: 99;
+}
+@media screen and (min-width: 768px) {
+  .arrow__off.arrow {
+    right: 1.9375rem;
+    bottom: 2rem;
+  }
+}
+.arrow__off {
+  display: none;
 }
 .article__btn--mdfy {
   max-width: 335px;

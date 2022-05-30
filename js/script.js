@@ -72,6 +72,7 @@ jQuery(function ($) {
     },
   });
 
+  // header section
   // scroll位置取得
   $(window).scroll(function () {
     // scroll量を取得
@@ -83,6 +84,22 @@ jQuery(function ($) {
     } else {
       // .header<770
       $(".header__inner").removeClass("color-on");
+    }
+  });
+
+  // smooth scroll section
+  // scroll位置取得
+  $(window).scroll(function () {
+    // scroll量を取得
+    // var scroll = $(window).scrollTop();
+    // console.log(scroll);
+    // if ($(window).scrollTop() > 800) {
+    if ($(window).scrollTop() > 800) {
+      // $(".header").toggleClass("small");
+      $(".arrow__off").addClass("arrow");
+    } else {
+      // .header<770
+      $(".arrow__off").removeClass("arrow");
     }
   });
 
