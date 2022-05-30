@@ -2,11 +2,12 @@
 
 .swiper {
   width: rem(375);
-  height: rem(770);
+  // height: rem(770);
+  height: 100vh;
   @include mq(md) {
     max-width: rem(1280);
     width: 100%;
-    height: rem(851);
+    // height: rem(851);
   }
   @include mq(xl) {
   }
@@ -30,13 +31,14 @@
 //imgタグだと下に隙間ができるのでblockに。
 .slide-img img {
   display: block;
-  height: rem(770);
+  // height: rem(770);
+  height: 100vh;
   object-fit: cover;
   // ajustment
   position: relative;
 
   @include mq(md) {
-    height: rem(851);
+    // height: rem(851);
   }
   @include mq(xl) {
   }
