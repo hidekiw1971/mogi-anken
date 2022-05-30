@@ -14,7 +14,7 @@
   @include mq(md) {
     // size
     display: block;
-    max-width: rem(1280);
+    // max-width: rem(1280);
     width: 100%;
     // ajustment
     margin: 0 auto;
@@ -22,3 +22,26 @@
   @include mq(xl) {
   }
 }
+// .header {
+//   // size
+//   display: inline-block;
+//   min-width: rem(375);
+//   width: 100%;
+//   height: rem(50);
+//   // ajustment
+//   position: fixed;
+//   inset: 0;
+//   // margin: auto;
+//   z-index: 99;
+
+//   @include mq(md) {
+//     // size
+//     display: block;
+//     max-width: rem(1280);
+//     width: 100%;
+//     // ajustment
+//     margin: 0 auto;
+//   }
+//   @include mq(xl) {
+//   }
+// }

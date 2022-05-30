@@ -1,5 +1,9 @@
 @use "global" as *;
 .header__li {
+  // size
+  display: flex;
+  // ajustment
+  justify-content: center;
   // font
   font-family: "Noto Sans JP", sans-serif;
   font-size: rem(16);
@@ -9,6 +13,8 @@
   line-height: 2.1875;
   // decoration
   color: #fff;
+  // space
+  margin-bottom: rem(20);
 
   @include mq(md) {
     // ajustment
@@ -141,10 +147,11 @@
 
 .header__li.open {
   // size
-  display: inline-block;
+  display: flex;
   width: 100%;
   // ajustment
-  text-align: center;
+  justify-content: center;
+  transition: 0.7s;
   // space
   margin-bottom: rem(20);
 }

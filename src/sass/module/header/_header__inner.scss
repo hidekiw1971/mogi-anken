@@ -9,6 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: 0.7s;
   position: relative; // to `.header__nav.open`
   // space
   padding-top: rem(0);
@@ -23,6 +24,7 @@
 
 .header__inner.color-on {
   background-color: rgba(17, 17, 17, 1);
+  transition: 0.7s;
 }
 
 // .header__inner.open {
