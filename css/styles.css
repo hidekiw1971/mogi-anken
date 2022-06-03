@@ -1018,9 +1018,6 @@ select::-ms-expand {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 68.75rem;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     margin: 0 auto;
   }
 }
@@ -1114,15 +1111,14 @@ select::-ms-expand {
 }
 .blog {
   display: block;
-  max-width: 375px;
-  max-width: 23.4375rem;
+  min-width: 375px;
+  min-width: 23.4375rem;
   width: 100%;
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .blog {
     display: block;
-    max-width: 80rem;
     width: 100%;
     margin: 0 auto;
   }
@@ -1391,14 +1387,18 @@ select::-ms-expand {
   display: block;
   width: 335px;
   width: 20.9375rem;
-  margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .card {
     width: 21.875rem;
-    margin: 0rem;
+    margin-right: 1.5625rem;
   }
 }
+.card.card__margin-right--off {
+  margin-right: 0px;
+  margin-right: 0rem;
+}
+
 .btn {
   display: inline-block;
   font-family: "Noto Sans JP", sans-serif;
@@ -1529,7 +1529,6 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .contact__inner {
     display: inline-block;
-    max-width: 80rem;
     width: 100%;
     padding-top: 9.25rem;
     padding-right: 0rem;
@@ -1974,7 +1973,6 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .footer__inner {
     display: block;
-    max-width: 80rem;
     width: 100%;
     margin: 0 auto;
     padding-top: 2.4rem;
