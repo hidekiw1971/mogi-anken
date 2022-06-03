@@ -7,7 +7,8 @@
   background-color: #333;
   @include mq(md) {
     // size
-    height: rem(550);
+    // height: rem(550);
+    height: 100%;
     // space
     padding: rem(120) rem(75) rem(121) rem(274.2);
     // ajustment

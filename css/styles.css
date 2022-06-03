@@ -3438,7 +3438,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .works__contents--inner {
-    height: 34.375rem;
+    height: 100%;
     padding: 7.5rem 4.6875rem 7.5625rem 17.1375rem;
     position: relative;
   }
