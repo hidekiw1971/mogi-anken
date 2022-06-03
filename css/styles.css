@@ -3201,9 +3201,8 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .overview__contents--inner {
-    max-width: 56rem;
     width: 100%;
-    height: 34.375rem;
+    height: 100%;
     background-color: #333;
     position: relative;
   }
@@ -3248,8 +3247,8 @@ select::-ms-expand {
   }
 }
 .overview__title {
-  max-width: 375px;
-  max-width: 23.4375rem;
+  min-width: 375px;
+  min-width: 23.4375rem;
   width: 100%;
   display: inline-block;
   font-family: "Noto Sans JP", sans-serif;
@@ -3267,7 +3266,6 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .overview__title {
     display: inline-block;
-    max-width: 80rem;
     width: 100%;
     font-size: 1.875rem;
     font-weight: 400;
@@ -3304,14 +3302,14 @@ select::-ms-expand {
   }
 }
 .overview {
-  max-width: 375px;
-  max-width: 23.4375rem;
+  min-width: 375px;
+  min-width: 23.4375rem;
   width: 100%;
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .overview {
-    max-width: 80rem;
+    width: 100%;
   }
 }
 .works__btn {
@@ -3476,6 +3474,7 @@ select::-ms-expand {
   .works__swiper--box-inner {
     width: 34.8125rem;
     height: 24.3125rem;
+    margin-right: 2rem;
   }
 }
 .works__swiper--box {
@@ -3562,7 +3561,6 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .works {
-    max-width: 80rem;
     width: 100%;
   }
 }
