@@ -20,14 +20,17 @@
   @include mq(md) {
     // size
     display: flex;
-    max-width: rem(1280);
+    // max-width: rem(1280);
     width: 100%;
     // space
     padding-top: rem(0);
     padding-bottom: rem(0);
+    // padding-left: rem(119);
+    // padding-right: rem(119);
     margin-bottom: rem(151);
     // ajustment
-    justify-content: center;
+    // justify-content: center;
+    justify-content: left;
     align-items: center;
   }
   @include mq(xl) {

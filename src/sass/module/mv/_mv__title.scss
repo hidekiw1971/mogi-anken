@@ -1,20 +1,20 @@
 @use "global" as *;
 .mv__title {
   // size
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: rem(375);
   width: 100%;
-  height: rem(770);
+  height: 100vh;
   // ajustment
   text-align: center;
   position: absolute;
-  top: 349px;
+  top: 0px;
   left: 0px;
   z-index: 10;
 
   @include mq(md) {
-    // ajustment
-    top: 376px;
   }
   @include mq(xl) {
   }
