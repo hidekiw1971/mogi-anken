@@ -4,8 +4,10 @@
     // size
     display: flex;
     flex-wrap: wrap;
-    width: rem(1100);
+    max-width: rem(1100);
+    width: 100%;
     // justify-content: space-between;
+    justify-content: center;
     // space
     // padding: rem(0) rem(90);
     // ajustment
@@ -18,11 +20,11 @@
 // blogページ設定
 .blog__content--inner.info-blog__content--inner {
   // space
-  padding-bottom: rem(57);
+  // padding-bottom: rem(57);
 
   @include mq(md) {
     // space
-    padding-bottom: rem(54);
+    // padding-bottom: rem(54);
   }
   @include mq(xl) {
   }

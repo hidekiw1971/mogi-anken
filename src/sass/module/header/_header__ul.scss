@@ -1,13 +1,17 @@
 @use "global" as *;
 .header__ul {
+  // size
+  width: 100%;
+  height: 100%;
+  // ajustment
+  display: flex;
+  flex-direction: column;
+  // decoration
+  color: #fff;
   @include mq(md) {
-    // size
-    height: 100%;
     // ajustment
-    display: flex;
-    flex-direction: column;
-    // decoration
-    color: #fff;
+    flex-direction: row;
+    justify-content: flex-end;
   }
   @include mq(xl) {
   }

@@ -1,7 +1,7 @@
 @use "global" as *;
 .overview__contents--img {
   // size
-  display: block;
+  display: inline-block;
   max-width: rem(375);
   width: 100%;
   // decoration

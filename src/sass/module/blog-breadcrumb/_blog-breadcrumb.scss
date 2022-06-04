@@ -1,8 +1,9 @@
 @use "global" as *;
 .blog-breadcrumb {
   // size
-  display: block;
-  width: 100%;
+  // display: block;
+  display: inline-block;
+  // width: 100%;
   // ajustment
   text-align: center;
   font-size: 0;

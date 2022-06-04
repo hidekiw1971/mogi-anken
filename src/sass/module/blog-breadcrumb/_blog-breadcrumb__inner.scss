@@ -28,13 +28,18 @@
   @include mq(md) {
     // size
     display: inline-block;
-    max-width: rem(1280);
+    // max-width: rem(1280);
     width: 100%;
     height: 100%;
     // space
     padding-top: rem(16);
     padding-bottom: rem(114.8);
-    padding-left: rem(90);
+    // padding-left: rem(90);
+    padding-left: rem(25);
+    padding-right: rem(25);
+    // ajustment
+    position: relative;
+    transform: translate(60px, 0px);
   }
   @include mq(xl) {
   }
