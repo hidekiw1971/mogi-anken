@@ -2556,6 +2556,7 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .drawer-menu {
     display: none;
+    display: bl¿ock;
   }
 }
 .drawer-menu:hover {
