@@ -1,0 +1,42 @@
+@use "global" as *;
+.header__li-pc--wrap {
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
+
+.header__li-pc--wrap-text {
+  display: block;
+  width: inherit;
+  height: inherit;
+  color: #333;
+}
+
+.header__li-pc--wrap-text::before {
+  @include mq(md) {
+    content: "";
+    // size
+    display: block;
+    width: 100%;
+    height: 2px;
+    // decoration
+    background-color: #ffea2e;
+    opacity: 0;
+    // ajustment -> `.header__li`
+    position: absolute;
+    bottom: rem(10);
+    transition: 0.7s;
+  }
+  @include mq(xl) {
+  }
+}
+
+.header__li-pc--wrap-text:hover::before {
+  @include mq(md) {
+    opacity: 1;
+    transition: 0.7s;
+  }
+  @include mq(xl) {
+  }
+}

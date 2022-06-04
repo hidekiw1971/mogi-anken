@@ -1,0 +1,11 @@
+@use "global" as *;
+.header__nav-pc--inner {
+  @include mq(md) {
+    width: inherit;
+    height: inherit;
+    // space
+    padding-top: rem(0);
+  }
+  @include mq(xl) {
+  }
+}

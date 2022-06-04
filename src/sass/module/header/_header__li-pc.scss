@@ -1,0 +1,40 @@
+@use "global" as *;
+.header__li-pc {
+  display: none;
+  @include mq(md) {
+    // size
+    display: flex;
+    // ajustment
+    justify-content: center;
+    // font
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: rem(16);
+    font-weight: $normal;
+    font-style: normal;
+    letter-spacing: rem(2);
+    line-height: 2.1875;
+    // decoration
+    color: #fff;
+    // space
+    // margin-bottom: rem(20);
+    // xxx
+    // ajustment
+    // display: flex;
+    // align-items: center;
+    // space
+    margin-right: rem(29.6);
+    // ajustment -> `.header__li--link-a::before`
+    position: relative;
+  }
+  @include mq(xl) {
+  }
+}
+
+// お問い合わせ
+.header__li-pc.header__li-pc--inquiry {
+  @include mq(md) {
+    background-color: #f00;
+  }
+  @include mq(xl) {
+  }
+}

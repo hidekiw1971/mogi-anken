@@ -1,0 +1,39 @@
+@use "global" as *;
+.header__li-pc--link-a {
+  @include mq(md) {
+    height: inherit;
+    display: flex;
+    align-items: center;
+  }
+  @include mq(xl) {
+  }
+}
+
+.header__li-pc--link-a:hover::before {
+  @include mq(md) {
+    // decoration
+    opacity: 1;
+  }
+  @include mq(xl) {
+  }
+}
+
+.header__li-pc--link-a::before {
+  @include mq(md) {
+    content: "";
+    // size
+    display: block;
+    width: 100%;
+    height: 2px;
+    // decoration
+    background-color: #ffea2e;
+    opacity: 0;
+    // ajustment -> `.header__li`
+    position: absolute;
+    bottom: rem(10);
+    left: 0;
+    transition: 0.7s;
+  }
+  @include mq(xl) {
+  }
+}

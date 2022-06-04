@@ -1,0 +1,10 @@
+@use "global" as *;
+.header__nav-pc {
+  @include mq(md) {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+  @include mq(xl) {
+  }
+}
