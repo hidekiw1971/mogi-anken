@@ -58,7 +58,7 @@
   // position
   position: absolute;
   // z-index: 5;
-  top: rem(564);
+  top: rem(654);
   left: rem(0);
 
   @include mq(md) {
@@ -68,7 +68,9 @@
     // ajustment
     position: absolute;
     // top: rem(0);
-    top: rem(14.4);
+    // top: rem(14.4);
+    // top: rem(67);
+    top: rem(22);
     left: 0;
 
     // decoration

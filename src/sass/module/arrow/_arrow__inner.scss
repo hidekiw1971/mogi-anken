@@ -3,12 +3,13 @@
   display: inline-block;
   width: rem(45);
   height: rem(45);
-  margin-right: rem(10);
+  margin-right: rem(0);
   background-color: #fff;
   float: right;
   overflow: hidden;
   position: relative;
   @include mq(md) {
+    // margin-right: rem(0);
   }
   @include mq(xl) {
   }

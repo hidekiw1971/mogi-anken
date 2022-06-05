@@ -10,25 +10,27 @@
 .arrow__line::before {
   content: "";
   display: inline-block;
-  width: rem(25);
+  // width: rem(25);
+  width: rem(19);
   height: rem(2);
   background-color: #333;
   transform: rotate(45deg);
   position: absolute;
-  top: rem(18);
-  left: rem(18);
+  top: rem(22);
+  left: rem(19);
 }
 
 .arrow__line::after {
   content: "";
   display: inline-block;
-  width: rem(25);
+  // width: rem(25);
+  width: rem(19);
   height: rem(2);
   background-color: #333;
   transform: rotate(-45deg);
   position: absolute;
-  top: rem(18);
-  left: rem(2);
+  top: rem(22);
+  left: rem(7);
 }
 
 .arrow__line:hover::before,

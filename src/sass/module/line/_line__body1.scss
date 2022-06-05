@@ -55,7 +55,7 @@
   // position
   position: absolute;
   z-index: 10;
-  top: rem(-706.9);
+  top: rem(-617);
   left: rem(0);
 
   @include mq(md) {
@@ -65,7 +65,8 @@
     // ajustment
     position: absolute;
     // top: rem(-499.8);
-    top: rem(-485.4);
+    // top: rem(-485.4);
+    top: rem(-477.4);
     left: 0;
     // decoration
     background: -moz-linear-gradient(

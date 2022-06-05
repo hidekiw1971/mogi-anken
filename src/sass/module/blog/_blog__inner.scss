@@ -7,14 +7,15 @@
   background-color: #111;
   // space
   padding-top: rem(101);
-  padding-bottom: rem(118);
+  // padding-bottom: rem(118);
+  padding-bottom: rem(60);
 
   @include mq(md) {
     // space
     // padding-top: rem(199.6);
     padding-top: rem(222);
     padding-right: rem(0);
-    padding-bottom: rem(149.6);
+    padding-bottom: rem(96);
     padding-left: rem(0);
   }
   @include mq(xl) {

@@ -21,9 +21,9 @@
   line-height: 1.1875;
   // space
   padding-top: rem(15);
-  padding-right: rem(0);
-  padding-bottom: rem(85);
-  padding-left: rem(21);
+  padding-right: rem(20);
+  padding-bottom: rem(80);
+  padding-left: rem(20);
 
   @include mq(md) {
     // size
@@ -33,13 +33,13 @@
     height: 100%;
     // space
     padding-top: rem(16);
-    padding-bottom: rem(114.8);
+    padding-bottom: rem(109);
     // padding-left: rem(90);
     padding-left: rem(25);
     padding-right: rem(25);
     // ajustment
     position: relative;
-    transform: translate(60px, 0px);
+    transform: translate(65px, 0px);
   }
   @include mq(xl) {
   }
