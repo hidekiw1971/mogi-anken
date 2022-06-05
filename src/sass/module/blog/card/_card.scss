@@ -12,7 +12,7 @@
     // width: rem(350);
     width: calc(100% / 3.33);
     // space
-    // margin: rem(0);
+    margin: rem(0);
     margin-right: rem(25);
   }
   @include mq(xl) {

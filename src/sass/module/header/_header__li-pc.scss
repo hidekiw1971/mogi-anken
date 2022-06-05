@@ -33,8 +33,21 @@
 // お問い合わせ
 .header__li-pc.header__li-pc--inquiry {
   @include mq(md) {
-    background-color: #f00;
+    background-color: #fff;
+    color: #333;
+    transition: 0.7s;
+    margin-right: rem(0);
   }
+  @include mq(xl) {
+  }
+}
+
+.header__li-pc.header__li-pc--inquiry:hover {
+  @include mq(md) {
+    color: #fff;
+    transition: 0.3s;
+  }
+
   @include mq(xl) {
   }
 }

@@ -17,6 +17,7 @@
   font-weight: $regular;
   letter-spacing: rem(2);
   line-height: 1.4375;
+  transition: 0.7s;
 
   // decoration
   color: #fff;
@@ -35,6 +36,7 @@
   cursor: pointer;
   background-color: #fff;
   color: #333;
+  transition: 0.7s;
 }
 
 // .pagenation li a:hover:not(.active) {

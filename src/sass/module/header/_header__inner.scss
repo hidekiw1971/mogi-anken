@@ -1,4 +1,5 @@
 @use "global" as *;
+// index.html
 .header__inner {
   // size
   width: 100%;
@@ -27,11 +28,31 @@
   transition: 0.7s;
 }
 
-// .header__inner.open {
-//   // decoration
-//   opacity: 1;
-//   @include mq(md) {
-//   }
-//   @include mq(xl) {
-//   }
-// }
+// blog.html
+.header__inner.blog-header__inner {
+  // size
+  width: 100%;
+  height: 100%;
+  // decoration
+  background-color: rgba(17, 17, 17, 0.5);
+  // ajustment
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.7s;
+  position: relative; // to `.header__nav.open`
+  // space
+  padding-top: rem(0);
+  padding-right: rem(0);
+  padding-bottom: rem(0);
+  padding-left: rem(22);
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
+
+.header__inner.blog-header__inner.color-on {
+  background-color: rgba(17, 17, 17, 1);
+  transition: 0.7s;
+}

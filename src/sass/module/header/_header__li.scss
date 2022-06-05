@@ -14,7 +14,7 @@
   // decoration
   color: #fff;
   // space
-  // margin-bottom: rem(20);
+  margin-bottom: rem(20);
 
   @include mq(md) {
     // ajustment
@@ -40,7 +40,9 @@
 
 .header__li--link-a {
   height: 100%;
+  width: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
