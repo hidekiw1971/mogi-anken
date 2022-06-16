@@ -1,19 +1,10 @@
 @use "global" as *;
 .works__contents--inner {
-  // size
-  width: 100%;
-  height: 100%;
-  // decoration
-  background-color: #333;
   @include mq(md) {
-    // size
-    // height: rem(550);
-    height: 100%;
-    // space
-    // padding: rem(120) rem(75) rem(121) rem(274.2);
-    padding: rem(120) rem(75) rem(98) rem(274.2);
-    // ajustment
-    position: relative; // -> works__swiper--box
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
   }
   @include mq(xl) {
   }

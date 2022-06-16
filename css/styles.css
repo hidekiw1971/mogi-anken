@@ -3506,8 +3506,6 @@ select::-ms-expand {
   color: #fff;
 }
 .works__content--inner {
-  padding-right: 20px;
-  padding-right: 1.25rem;
   padding-left: 20px;
   padding-left: 1.25rem;
   padding-bottom: 21px;
@@ -3516,6 +3514,7 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .works__content--inner {
     text-align: left;
+    padding-bottom: 0;
   }
 }
 .works__content--text {
@@ -3563,27 +3562,40 @@ select::-ms-expand {
     text-align: left;
   }
 }
-.works__contents--inner {
-  width: 100%;
-  height: 100%;
-  background-color: #333;
-}
 @media screen and (min-width: 768px) {
   .works__contents--inner {
-    height: 100%;
-    padding: 7.5rem 4.6875rem 6.125rem 17.1375rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: relative;
   }
 }
-.works__contents {
-  width: 100%;
-  background-color: #111;
-  position: relative;
-  z-index: 10;
+@media screen and (min-width: 768px) {
+  .works__contents-box--bg {
+    width: 70%;
+    margin-left: 30%;
+    min-height: 34.375rem;
+    background-color: #333;
+  }
 }
 @media screen and (min-width: 768px) {
-  .works__contents {
-    padding-left: 24rem;
+  .works__contents-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    max-width: 74.375rem;
+    margin-right: 1.5625rem;
+    margin-left: 1.5625rem;
   }
 }
 .works__inner {
@@ -3597,6 +3609,8 @@ select::-ms-expand {
   .works__inner {
     width: 100%;
     padding-bottom: 9.9375rem;
+    position: relative;
+    z-index: 10;
   }
 }
 .works__swiper--box-inner {
@@ -3618,11 +3632,6 @@ select::-ms-expand {
   .works__swiper--box {
     width: 34.8125rem;
     height: 24.3125rem;
-    position: absolute;
-    top: 47.9%;
-    left: 1.2%;
-    -webkit-transform: translate(-54.8%, -46.9%);
-            transform: translate(-54.8%, -46.9%);
   }
 }
 .works__title--inner {

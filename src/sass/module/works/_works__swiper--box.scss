@@ -7,10 +7,10 @@
     width: rem(557);
     height: rem(389);
     // ajustment
-    position: absolute; // -> works__contents--inner
-    top: 47.9%;
-    left: 1.2%;
-    transform: translate(-54.8%, -46.9%);
+    // position: absolute;
+    // top: 47.9%;
+    // left: 1.2%;
+    // transform: translate(-54.8%, -46.9%);
   }
   @include mq(xl) {
   }
