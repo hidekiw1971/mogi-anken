@@ -10,10 +10,7 @@
   background-color: #333;
 
   @include mq(md) {
-    // space
-    padding-right: rem(384);
     padding-bottom: rem(0);
-    // decoration
     background-color: transparent;
   }
   @include mq(xl) {

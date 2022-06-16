@@ -5,12 +5,7 @@
   // space
   // padding-top: rem(24);
   padding-top: rem(19);
-
   @include mq(md) {
-    // space
-    padding-top: rem(0);
-    // ajustment
-    text-align: left;
   }
   @include mq(xl) {
   }
