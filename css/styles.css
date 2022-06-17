@@ -3326,9 +3326,15 @@ select::-ms-expand {
 .overview__contents--img::before {
   content: "";
   display: block;
-  width: 557px;
-  width: 34.8125rem;
-  padding-top: 69.83%;
+  width: 375px;
+  width: 23.4375rem;
+  padding-top: 69.6%;
+}
+@media screen and (min-width: 768px) {
+  .overview__contents--img::before {
+    width: 34.8125rem;
+    padding-top: 69.83%;
+  }
 }
 @media screen and (min-width: 768px) {
   .overview__contents--inner {

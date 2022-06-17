@@ -23,11 +23,11 @@
   content: "";
   // size
   display: block;
-  width: rem(557);
-  // aspect-ratio: 4/3;
-  padding-top: 69.83%;
-
+  width: rem(375);
+  padding-top: 69.6%;
   @include mq(md) {
+    width: rem(557);
+    padding-top: 69.83%;
   }
   @include mq(xl) {
   }
