@@ -1400,7 +1400,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .card {
-    width: 31.81%;
+    width: 31.7%;
     margin: 0rem;
     margin-right: 1.5625rem;
   }
