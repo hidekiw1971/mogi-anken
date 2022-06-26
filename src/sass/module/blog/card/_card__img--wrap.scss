@@ -1,11 +1,9 @@
 @use "global" as *;
-.blog__contents {
-  // ajustment
+.card__img--wrap {
   position: relative;
-  z-index: 10;
-
+  padding-top: 66.567%;
+  overflow: hidden;
   @include mq(md) {
-    // display: none;
   }
   @include mq(xl) {
   }

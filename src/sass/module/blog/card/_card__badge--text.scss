@@ -1,0 +1,12 @@
+@use "global" as *;
+.card__badge--text {
+  position: absolute;
+  z-index: 2;
+  top: rem(-10);
+  left: rem(-7);
+  transition: $slow;
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}

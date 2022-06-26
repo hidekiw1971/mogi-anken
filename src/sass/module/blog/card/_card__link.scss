@@ -1,0 +1,46 @@
+@use "global" as *;
+.card__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: $slow;
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
+
+// .card__link:hover {
+//   @include mq(md) {
+//   }
+//   @include mq(xl) {
+//   }
+// }
+
+.card__link:hover .card__title,
+.card__link:hover .card__explain,
+.card__link:hover .card__datetime {
+  color: #fff;
+  transition: $slow;
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
+.card__link:hover .card__body {
+  background-color: #333;
+  transition: $slow;
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
+
+.card__link:hover .card__img {
+  transform: scale(1.1);
+  transition: $slow;
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}

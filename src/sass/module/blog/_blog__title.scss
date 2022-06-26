@@ -1,6 +1,45 @@
 @use "global" as *;
 .blog__title {
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: $normal;
+  font-size: rem(20);
+  letter-spacing: rem(2);
+  line-height: 1.45;
+  color: #fff;
+  text-align: center;
+  transition: $slow;
+  position: relative;
   @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
+
+.blog__title::after {
+  content: "Blog";
+  display: block;
+  color: #f9f871;
+  opacity: 0.27;
+  font-family: "Noto Serif JP", serif;
+  font-style: normal;
+  font-weight: $normal;
+  font-size: rem(50);
+  letter-spacing: rem(2);
+  line-height: 1.44;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -87%);
+  z-index: 1;
+  transition: $slow;
+  @include mq(md) {
+    font-size: rem(110);
+    line-height: 1.436;
+    left: auto;
+    right: 0;
+    transform: translate(0%, -67%);
+    z-index: 0;
   }
   @include mq(xl) {
   }

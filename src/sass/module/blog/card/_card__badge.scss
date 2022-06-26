@@ -1,11 +1,24 @@
 @use "global" as *;
 .card__badge {
-  // size
-  width: 100%;
-  height: 100%;
-  // decoration
-  // ajustment -> `.card__badge--text`
   position: relative;
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
+
+.card__badge::after {
+  content: "";
+  position: absolute;
+  top: rem(-28);
+  left: rem(-19);
+  width: 0;
+  height: 0;
+  z-index: 1;
+  border-width: rem(30);
+  border-style: solid;
+  border-color: #ffba6a;
+  border-radius: 50%;
   @include mq(md) {
   }
   @include mq(xl) {

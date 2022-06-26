@@ -1,6 +1,8 @@
 @use "global" as *;
-.card__content {
+.cards {
   @include mq(md) {
+    display: flex;
+    flex-wrap: wrap;
   }
   @include mq(xl) {
   }

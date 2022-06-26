@@ -1,0 +1,14 @@
+@use "global" as *;
+.card__body {
+  background-color: #fff;
+  padding-top: rem(4);
+  padding-right: rem(20);
+  padding-left: rem(20);
+  padding-bottom: rem(16);
+  // margin-bottom: rem(24);
+  transition: $slow;
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
