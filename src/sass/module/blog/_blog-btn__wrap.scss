@@ -1,0 +1,60 @@
+@use "global" as *;
+.blog-btn__wrap {
+  padding-top: rem(10);
+  padding-bottom: rem(10);
+  background-color: #333;
+  border: 1px solid #fff;
+  position: relative;
+  overflow: hidden;
+  transition: $slow;
+  @include mq(md) {
+    width: rem(360);
+  }
+  @include mq(xl) {
+  }
+}
+
+.blog-btn__wrap p {
+  color: #fff;
+  // color: #333;
+  text-align: center;
+  transition: $slow;
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
+
+.blog-btn__wrap::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  // background-color: #fff;
+  background-color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 0;
+  left: -100%;
+  transition: $slow;
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
+
+.blog-btn__wrap:hover::after {
+  left: 0;
+  transition: $slow;
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
+
+.blog-btn__wrap:hover::after .blog-btn__wrap p {
+  color: #333;
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}

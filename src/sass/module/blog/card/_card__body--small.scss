@@ -1,6 +1,5 @@
 @use "global" as *;
-.card__content--inner {
-  // ajustment
+.card__body--small {
   display: flex;
   justify-content: space-between;
   @include mq(md) {

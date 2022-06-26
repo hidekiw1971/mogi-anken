@@ -1,7 +1,0 @@
-@use "global" as *;
-.card__date {
-  @include mq(md) {
-  }
-  @include mq(xl) {
-  }
-}

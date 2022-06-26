@@ -58,6 +58,9 @@ $mediaquerys: (
   xl: "screen and (min-width: #{map-get($breakpoints,'xl')}px)",
 );
 
+// 動きをゆっくりにする
+$slow: 0.75s;
+
 // @include mq(){}で書くとブレークポイントが反映される（初期値はmd）
 @mixin mq($mediaquery: md) {
   @media #{map-get($mediaquerys, $mediaquery)} {
