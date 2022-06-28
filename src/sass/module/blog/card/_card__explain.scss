@@ -9,6 +9,7 @@
   color: #333333;
   transition: $slow;
   @include mq(md) {
+    padding-bottom: rem(10);
   }
   @include mq(xl) {
   }
