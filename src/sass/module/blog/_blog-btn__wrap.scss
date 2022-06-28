@@ -51,8 +51,12 @@
   }
 }
 
-.blog-btn__wrap:hover::after .blog-btn__wrap p {
+// .blog-btn__wrap:hover::after .blog-btn__wrap p {
+.blog-btn__wrap:hover p {
   color: #333;
+  position: relative;
+  z-index: 10;
+  transition: $slow;
   @include mq(md) {
   }
   @include mq(xl) {
