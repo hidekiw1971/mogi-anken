@@ -6,3 +6,4 @@
 2022/6/19 blog カード修正（wp 用に修正）
 2022/6/27 index.html blog の btn 調整中
 2022/6/28 blog section 修正完了（微調整は後で）
+2022/6/29 index.html pc size→ok、sp size→in works

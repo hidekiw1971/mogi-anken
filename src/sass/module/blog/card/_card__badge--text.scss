@@ -6,6 +6,8 @@
   left: rem(-7);
   transition: $slow;
   @include mq(md) {
+    top: rem(3);
+    left: rem(-3);
   }
   @include mq(xl) {
   }

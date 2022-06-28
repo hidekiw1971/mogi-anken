@@ -3,10 +3,12 @@
   padding-top: rem(50);
   padding-right: rem(20);
   padding-left: rem(20);
-  padding-bottom: rem(120);
+  padding-bottom: rem(151);
   background-color: #111;
   @include mq(md) {
-    padding-top: rem(71);
+    padding-right: rem(90);
+    padding-left: rem(90);
+    padding-top: rem(209.8);
   }
   @include mq(xl) {
   }

@@ -1,6 +1,7 @@
 @use "global" as *;
 .card__category {
   background-color: #ffea2e;
+  padding: rem(0) rem(6);
   @include mq(md) {
   }
   @include mq(xl) {

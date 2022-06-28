@@ -11,6 +11,8 @@
   transition: $slow;
   position: relative;
   @include mq(md) {
+    font-size: rem(30);
+    padding-bottom: rem(32);
   }
   @include mq(xl) {
   }
@@ -40,6 +42,7 @@
     right: 0;
     transform: translate(0%, -67%);
     z-index: 0;
+    top: 63%;
   }
   @include mq(xl) {
   }
