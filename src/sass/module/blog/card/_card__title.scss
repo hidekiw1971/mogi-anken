@@ -8,6 +8,7 @@
   line-height: 1.944;
   color: #333333;
   transition: $slow;
+  padding-bottom: rem(4);
   @include mq(md) {
     padding-bottom: rem(6);
   }

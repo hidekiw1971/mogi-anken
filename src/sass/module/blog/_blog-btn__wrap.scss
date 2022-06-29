@@ -1,13 +1,16 @@
 @use "global" as *;
 .blog-btn__wrap {
-  padding-top: rem(16);
-  padding-bottom: rem(16);
+  padding-top: rem(11);
+  padding-bottom: rem(11);
   background-color: #333;
   border: 1px solid #fff;
   position: relative;
   overflow: hidden;
   transition: $slow;
   @include mq(md) {
+    padding-top: rem(16);
+    padding-bottom: rem(16);
+
     width: rem(360);
   }
   @include mq(xl) {

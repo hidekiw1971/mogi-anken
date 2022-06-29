@@ -1,5 +1,6 @@
 @use "global" as *;
 .works__contents-box {
+  background-color: #333;
   @include mq(md) {
     display: flex;
     align-items: center;

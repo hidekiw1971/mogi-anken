@@ -2,7 +2,8 @@
 .cards__col3 > .cards__item {
   margin-bottom: rem(24);
   @include mq(md) {
-    width: calc(100% / 3.127);
+    // width: calc(100% / 3.127);
+    width: calc(100% / 3.128);
     margin-right: 2.032%;
     margin-bottom: rem(48);
   }
