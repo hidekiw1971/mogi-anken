@@ -8,3 +8,4 @@
 2022/6/28 blog section 修正完了（微調整は後で）
 2022/6/29 index.html pc size→ok、sp size→in works
 2022/6/29 wp-pagenavi 調整中
+2022/6/30 残りは線だけ

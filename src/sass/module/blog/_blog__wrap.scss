@@ -19,6 +19,7 @@
   padding-top: rem(0);
   padding-bottom: rem(48);
   @include mq(md) {
+    margin-bottom: rem(0);
   }
   @include mq(xl) {
   }

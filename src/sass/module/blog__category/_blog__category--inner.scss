@@ -2,7 +2,7 @@
 .blog__category--inner {
   // size
   display: inline-block;
-  min-width: rem(375);
+  // min-width: rem(375);
   width: 100%;
   // space
   padding-top: rem(0);
@@ -12,7 +12,7 @@
 
   @include mq(md) {
     // size
-    max-width: rem(1280);
+    // max-width: rem(1280);
     width: 100%;
     // space
     padding-top: rem(0);

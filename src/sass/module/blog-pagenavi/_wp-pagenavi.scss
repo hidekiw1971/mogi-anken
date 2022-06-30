@@ -4,6 +4,7 @@
   text-align: center;
   margin-bottom: rem(120);
   @include mq(md) {
+    margin-bottom: rem(151);
   }
   @include mq(xl) {
   }
@@ -14,14 +15,18 @@
   color: #fff;
   background-color: #333;
   border: 1px solid #fff;
-  // padding: rem(8) rem(15);
-  padding: rem(3) rem(6);
-  margin: rem(0) rem(8);
+  padding: rem(0) rem(6);
+  margin-right: rem(10);
   white-space: nowrap;
-  // border-radius: rem(3);
   transition: 0.2s ease-in-out;
   text-align: center;
   text-decoration: none;
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: $normal;
+  font-size: rem(16);
+  letter-spacing: rem(2);
+  line-height: 1.4375;
   @include mq(md) {
   }
   @include mq(xl) {
@@ -43,6 +48,44 @@
   background-color: #f9f871;
   border-color: #fff;
   font-weight: bold;
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
+
+a.previouspostslink {
+  padding-right: rem(12);
+  padding-left: rem(12);
+  margin-right: rem(16);
+  margin-left: rem(0);
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
+
+a.nextpostslink {
+  padding-right: rem(12);
+  padding-left: rem(12);
+  margin-left: rem(16);
+  margin-right: rem(0);
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
+
+.wp-pagenavi > .page:nth-of-type(1) {
+  margin-left: rem(0);
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
+
+.wp-pagenavi > .page:nth-of-type(4) {
+  margin-right: rem(0);
   @include mq(md) {
   }
   @include mq(xl) {
