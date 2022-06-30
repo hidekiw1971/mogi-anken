@@ -10,9 +10,11 @@
   text-align: center;
   transition: $slow;
   position: relative;
+  margin-bottom: rem(62);
   @include mq(md) {
     font-size: rem(30);
     padding-bottom: rem(32);
+    margin-bottom: 0;
   }
   @include mq(xl) {
   }
@@ -30,7 +32,7 @@
   letter-spacing: rem(2);
   line-height: 1.44;
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -87%);
   z-index: 1;

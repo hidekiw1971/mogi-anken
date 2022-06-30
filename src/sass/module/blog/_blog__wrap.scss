@@ -1,14 +1,25 @@
 @use "global" as *;
 .blog__wrap {
-  padding-top: rem(50);
+  padding-top: rem(100);
   padding-right: rem(20);
   padding-left: rem(20);
-  padding-bottom: rem(151);
+  padding-bottom: rem(120);
   background-color: #111;
   @include mq(md) {
     padding-right: rem(90);
     padding-left: rem(90);
     padding-top: rem(209.8);
+    margin-bottom: rem(31);
+  }
+  @include mq(xl) {
+  }
+}
+
+.blog__wrap.blog-blog__wrap {
+  padding-top: rem(0);
+  padding-bottom: rem(48);
+  @include mq(md) {
+    margin-bottom: rem(0);
   }
   @include mq(xl) {
   }
