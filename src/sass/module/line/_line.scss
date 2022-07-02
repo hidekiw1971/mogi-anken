@@ -1,5 +1,6 @@
 @use "global" as *;
 .line {
+  background-color: #111;
   @include mq(md) {
   }
   @include mq(xl) {

@@ -8,6 +8,7 @@
     // ajustment
     text-align: left;
     padding-left: rem(32);
+    padding-right: rem(0);
     padding-bottom: 0;
   }
   @include mq(xl) {
