@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    z-index: 15;
   }
   @include mq(xl) {
   }

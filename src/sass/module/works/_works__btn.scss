@@ -23,6 +23,7 @@
   overflow: hidden;
   border: solid 1px #fff;
   @include mq(md) {
+    max-width: none;
     // font
     font-size: rem(16);
     font-weight: 500;

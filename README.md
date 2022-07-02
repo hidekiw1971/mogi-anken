@@ -9,3 +9,4 @@
 2022/6/29 index.html pc size→ok、sp size→in works
 2022/6/29 wp-pagenavi 調整中
 2022/6/30 残りは線だけ
+2022/7/2 全て対応完了

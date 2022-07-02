@@ -10,7 +10,8 @@
   z-index: 99;
   @include mq(md) {
     right: rem(31);
-    bottom: rem(33.8);
+    // bottom: rem(33.8);
+    bottom: rem(38.6);
   }
   @include mq(xl) {
   }
